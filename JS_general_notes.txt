@@ -77,6 +77,25 @@ Objects:
         }
         method calculateAge is as:
         var calculateAge = function(birthYear) {};
+
+Execution context:
+    When function is called a new execution context is created on top of previous one (first one is global context) - execution stack starts to build up
+    Execution context can be accociated with execution context object with properties:
+        - Variable Object (VO) - contains: function arguments, inner variable and function declarations 
+        - Scope chain - holds VO and VOs of all its parents
+        - 'this' variable
+    There are 2 stages when function is called: creation phase and execution phase:
+        1. creation phase: 
+            1.1 VO is created: 
+                'argument' object is created: holds arguments of function
+                code is scanned for function and varaibles delarations and for each property of VO is created poinitng to functions
+                and for variables with value 'undefined'
+                this is HOISTING : functions and variables are available before execution starts
+                difference is: functions are defined, but variables are set to 'undefined' - they will be defined in execution phase
+                
+            1.2 scope chain
+            1.3 'this' is determined
+        2. execution phase: the code of the function that generated current execution context is run line by line
         
 
 

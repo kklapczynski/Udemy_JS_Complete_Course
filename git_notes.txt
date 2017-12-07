@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=Y9XZQO1n_7c
+
 1. To start version control of an existing folder:
     1.1 RC on that folder + Git Bash here - gir command line terminal will open
     1.2 git init - will add git stuff to that folder, so version control will start
@@ -15,3 +17,5 @@
 3. Creating ignore list 
     3.1 git touch .gitignore
     3.2 In this .gitignore file we add files or type of files, that we don't want to stage and commit e.g. *.log
+    3.3. .gitignore file has to be staged and commited
+4. Branching and merging
