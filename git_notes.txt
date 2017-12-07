@@ -4,3 +4,8 @@
     1.3 .git folder is created, where all info about changes/versions/branhces are stored
     1.4 if .git deleted all that info is lost - it is NOT a backup, unless using github for remote repo
     1.5 .git can be zipped and send and full repo with all info will be available
+2. Adding file to git
+    2.1 git status - shows versioned and unversioned files
+        git add [filename] - adds file to version control
+    2.2 git commit -m ['description - comment for commit'] - commits - saves version of files added to version control
+        git log - shows list of commits
