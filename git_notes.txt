@@ -6,6 +6,12 @@
     1.5 .git can be zipped and send and full repo with all info will be available
 2. Adding file to git
     2.1 git status - shows versioned and unversioned files
-        git add [filename] - adds file to version control
+        git add [filename] - adds file to version control - stageing
     2.2 git commit -m ['description - comment for commit'] - commits - saves version of files added to version control
         git log - shows list of commits
+    2.3 staging - adding many files:
+        git add . - stageing of all files in dir
+        git add *.html  - staging all mathcing files
+3. Creating ignore list 
+    3.1 git touch .gitignore
+    3.2 In this .gitignore file we add files or type of files, that we don't want to stage and commit e.g. *.log
