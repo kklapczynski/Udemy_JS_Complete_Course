@@ -1,0 +1,82 @@
+JS primitives - meaning they are NOT objects:
+1. Number  - floating point numbers, 1 datatype for decimals and integers.
+2. String.
+3. Boolean.
+4. Undefined - datatype of variable that doesn't have value yet; has been declared, but no value is assigned.
+5. Null - now value, but intensionally assigned.
+
+JS has DYNAMIC TYPING: 
+    No need to assign datatype to var. JS figures it out on its own in the runtime.
+    Allows us to change datatype of variable in our code.
+
+prompt();
+    Pop up in browser for user to pass a text/number
+    var a = prompt('A what?');
+    a is assinged value passed by user;
+
+alert();
+    Pop up alert - text window in browser.
+
+Operators precedence.
+    Order in which operators are run.
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+    Higher number of precedence gets executed before lower.
+
+Escaping symbols
+    We can escape symbol in string using backslash:
+    console.log('It\'s nice today.');
+
+DRY - don't repeat yourself
+
+Statements and expressions:
+    Statement e.g.:
+        function someFun() { // code };
+        or 
+        if (x==0) { // code }
+
+        Statement doesn't produce immediate value or variable.
+
+    Expression e.g.: 1+2; var someFun = function () { //code } ; var x = 2;
+
+        Expression immedietaly produces value or variable.
+
+Arrays:
+    .push() - adds member at the end
+    .unshift() - adds member at the beginning
+    .pop() - without arg: removes last member
+    .shift() - without arg: removes first member
+    .indexOf() - returns index of arg in an array or -1 when it's not there at Allows
+
+Objects:
+    most common way to create is object literal:
+        var john = {
+            name: 'John',
+            familyName: 'Smith',
+            job: 'teacher'
+        }
+    other way:
+        var jane = new Object();
+        jane.name = 'Jane';
+        or
+        jane['familyName'] = 'Snow';
+
+    getting values:
+        john.name = john['name']
+
+    data mutation - changing values:
+        john.name = 'Miller';
+        john(['job']) = 'builder';
+
+    methods of objects are function expressions:
+        var john = {
+            name: 'John',
+            familyName: 'Smith',
+            job: 'teacher',
+            birthYear: 1983,
+            calculateAge: function (birthYear) { // return ... code }
+        }
+        method calculateAge is as:
+        var calculateAge = function(birthYear) {};
+        
+
+
