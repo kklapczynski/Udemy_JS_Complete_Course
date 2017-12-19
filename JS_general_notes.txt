@@ -96,6 +96,33 @@ Execution context:
             1.2 scope chain
             1.3 'this' is determined
         2. execution phase: the code of the function that generated current execution context is run line by line
+
+    'this':
+        value of it is assigned only when function, in which it is,
+        is called = invoked . It's because execution context object, to which this belongs
+        is created only when function is called.
+
+        'this' in function declared in global scope
+        holds global object - Window object in browser
+
+        'this' in function declared inside method of an object
+        still returns global object - Window in browser
+
+        'this' in method declaration returns object, to which method belongs
+        I think method declaration is like function expression and it's different 
+        then function declaration:
+
+        declaration: function a() {};
+        expression: var a = function() {};
+        method declaration: 
+            var someObject = {
+                a: function() {},
+                b: 'text',
+                c: [number]
+            }
+        
+// method borrowing
+mike.calculateAge = john.calculateAge;
         
 
 

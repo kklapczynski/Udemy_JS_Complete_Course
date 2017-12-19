@@ -1,7 +1,7 @@
 https://www.youtube.com/watch?v=Y9XZQO1n_7c
 
 1. To start version control of an existing folder:
-    1.1 RC on that folder + Git Bash here - gir command line terminal will open
+    1.1 RC on that folder + Git Bash here - git command line terminal will open
     1.2 git init - will add git stuff to that folder, so version control will start
     1.3 .git folder is created, where all info about changes/versions/branhces are stored
     1.4 if .git deleted all that info is lost - it is NOT a backup, unless using github for remote repo
@@ -13,9 +13,17 @@ https://www.youtube.com/watch?v=Y9XZQO1n_7c
         git log - shows list of commits
     2.3 staging - adding many files:
         git add . - stageing of all files in dir
-        git add *.html  - staging all mathcing files
+        git add *.html  - staging all matching files
 3. Creating ignore list 
-    3.1 git touch .gitignore
+    3.1 in gitbash we can use command: touch .gitignore to create ignore list file
     3.2 In this .gitignore file we add files or type of files, that we don't want to stage and commit e.g. *.log
     3.3. .gitignore file has to be staged and commited
 4. Branching and merging
+
+5. Clone repo from GITHUB:
+    5.1 In GITHUB you can fork repos from others. Once it's forked - it's on your account in Github and you can clone it to local computer.
+        You clone it by getting url address of this repo. You get it pressing 'Clone or download' button, where you can copy this URL.
+    5.2 On your computer go to folder when you want repo downloaded and Git Bash Here. Then in terminal use command:
+        'git clone [URL copied from github]'.
+6. Commiting changes on local repo to remote - master repo in Github:
+    6.1 
